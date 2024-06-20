@@ -76,8 +76,15 @@ WSGI_APPLICATION = 'ReviewAIProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        "NAME": "reviewaidatabase",
+        "USER": "user",
+        "PASSWORD": "Keikapi0806",
+        "HOST": "reviewaidatabase.mysql.database.azure.com",
+        "PORT": "3306",
+        'OPTIONS': {
+            'ssl': {'ca': '/var/www/html/DigiCertGlobalRootCA.crt.pem'}
+        }
     }
 }
 

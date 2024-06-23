@@ -82,8 +82,10 @@ DATABASES = {
         "PASSWORD": "Keikapi0806",
         "HOST": "reviewaidatabase.mysql.database.azure.com",
         "PORT": "3306",
-        'OPTIONS': {
-            'ssl': {'ca': '/var/www/html/DigiCertGlobalRootCA.crt.pem'}
+        "OPTIONS": {
+            "ssl": {
+                "ca": "DigiCertGlobalRootCA.crt (1).pem"
+            }
         }
     }
 }

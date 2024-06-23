@@ -19,5 +19,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ReviewAI/', include('ReviewAIapp.urls')), #includeモジュールをインポートし、アプリのurls.pyファイルを呼び出す
+    path('', include('ReviewAIapp.urls')), #includeモジュールをインポートし、アプリのurls.pyファイルを呼び出す
 ]

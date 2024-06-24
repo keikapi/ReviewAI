@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <form method="Post">
+            {% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+            <buttan type="submit">送信</buttan>
+        </form>
+</body>
+</html>
